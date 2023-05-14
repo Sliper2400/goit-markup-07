@@ -38,9 +38,14 @@
           </li>
         </ul>
       </address>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="close-icon" width="24" height="24">
+          <use href="./images/icons.svg#Vector"></use>
+        </svg>
+      </button>
     </div>
   </header>
-  <main>
+  <!-- <main>
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -322,7 +327,7 @@
         </ul>
       </div>
     </section>
-  </main>
+  </main> -->
   <footer class="footer-style">
     <div class="container">
       <div class="logo-cont">
@@ -433,6 +438,65 @@
       </form>
     </div>
   </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="8" height="8">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a href="./index.html" class="link">Studio</a></li>
+      <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+      <li><a href="" class="link">Contacts</a></li>
+    </ul>
+
+    <ul class="mobile-contacts">
+      <li><a href="tel:+110001111111">+11 (000) 111-11-11</a>
+
+      </li>
+      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+      </li>
+    </ul>
+
+    <ul class="mobile-socials list">
+      <li class="socials-item">
+        <a class="footer-link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon instagtam">
+          <svg class="footer-icon" width="24" height="24">
+            <use href="./images/icons.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="footer-link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon twitter">
+          <svg class="footer-icon" width="24" height="24">
+            <use href="./images/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="footer-link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon facebook">
+          <svg class="footer-icon" width="24" height="24">
+            <use href="./images/icons.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="footer-link" href="" target="_blank" rel="noopener noreferrer" aria-label="icon linkedin">
+          <svg class="footer-icon" width="24" height="24">
+            <use href="./images/icons.svg#linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./JS/mobile-menu.js"></script>
   <script src="./JS/modal.js"></script>
 </body>
 
