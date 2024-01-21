@@ -63,10 +63,19 @@ li {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.page-header>.container {
+
+@media only screen and (min-width: 1200px) {
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+
+
+.header-container {
     display: flex;
     justify-content: space-between;
-    width: 1158px;
     box-sizing: border-box;
     align-items: center;
     padding: 0 15px;
@@ -106,10 +115,11 @@ a {
     text-transform: uppercase;
     color: var(--blue-color);
     text-decoration: none;
-    margin-right: 76px;
+    margin-right: auto;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
+    /* margin-right: 76px; */
 
 }
 
@@ -154,6 +164,20 @@ a {
     padding: 0;
     margin: 0;
 }
+
+@media only screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .contacts {
+        display: none;
+    }
+}
+
 
 
 
@@ -402,6 +426,30 @@ a {
     color: var(--grey-color);
     margin-top: 0;
     margin-bottom: 72px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.portfolio-title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--grey-color);
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 72px;
 }
 
 .member-cards {
@@ -1147,13 +1195,16 @@ input {
 }
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: var(--white-color);
     z-index: 999;
 
     transform: translateX(100%);
@@ -1175,6 +1226,7 @@ input {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -1182,4 +1234,43 @@ input {
     padding: 10px;
     color: #fff;
     text-decoration: none;
+}
+
+.close-button {
+    fill: var(--grey-color);
+    background-color: #E7E9FC;
+    border-radius: 50px;
+    border: 1px solid #2E2F42;
+
+
+}
+
+.close-btn {
+    top: 24px;
+    right: 24px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2E2F42;
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    background-color: #E7E9FC;
+    fill: var(--grey-color);
+    border-radius: 50%;
+}
+
+
+.mobile-contacts {
+    margin-bottom: 48px;
+}
+
+.phone {
+    color: var(--blue-color);
+}
+
+.mobile-socials {
+    display: flex;
+    gap: 56px;
 }
